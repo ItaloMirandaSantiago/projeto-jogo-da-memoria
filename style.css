@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    background-color: rgb(61, 61, 105);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    position: relative;
+    width: 130px;
+    height: 130px;
+
+    transform-style:preserve-3d;
+    transition: transform .5s;
+}
+
+.card_frente, .card_tras{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+}
+
+.desinverter{
+    transform: rotateY(180deg);
+}
+
+.card_frente{
+    transform: rotateY(180deg);
+    background-color: blueviolet;
+}
+
+.card_tras{
+    background-color: rgb(50, 22, 77);
+    font-size: 30px;
+    color: rgb(10, 3, 3);
+}
+/* fim de jogo - vitoria */
+.game_over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#restart{
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+}
+
+/* fim de jogo - vitoria */
+
+.tabuleiro{
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
