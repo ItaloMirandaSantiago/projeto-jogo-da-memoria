@@ -7,4 +7,4 @@
 <li>Javascript</li>
 <li>CSS</li>
 <li>HTMl</li>
-<<list>
+</list>
