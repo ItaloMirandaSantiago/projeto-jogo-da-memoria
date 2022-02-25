@@ -3,7 +3,6 @@
 <h2>O que foi usado para a criação do site</h2>
 
 <list>
-<li>React.js</li>
 <li>Javascript</li>
 <li>CSS</li>
 <li>HTMl</li>
